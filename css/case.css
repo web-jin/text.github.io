@@ -1,0 +1,90 @@
+.my-big{
+    margin-top: 80px;
+}
+.my-big img{
+    width: 100%;
+}
+ul,li,p {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.centera >.container {
+    padding: 10px;
+    text-align: center;
+}
+.centera >.container a{
+    height: 40px;
+    display: inline-block;
+    line-height: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin:0 20px 34px;
+}
+.centera {
+    border-top: 1px solid #f3f3f3;
+    padding:30px 0;
+    overflow:hidden;
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+.hover {
+    color: #000;
+    border-bottom: 2px solid #f6d203;
+}
+#tablea {
+    background:#f3f3f3;
+    padding-bottom: 46px;
+    padding-top: 46px;
+}
+.box {
+    display:none
+}
+.box div img{
+    width: 100%;
+}
+.box>div>div{
+    margin-top: 0;
+    color: #000000;
+    font-size: 14px;
+    text-align: left;
+    line-height: 40px;
+    border-left: 1px solid #9d9d9d;
+}
+.centera>#tablea>.box div p{
+    color: #000;
+    line-height: 36px;
+}
+.box div img{
+    height: 105px;
+}
+.centera>#tablea>.box .col-sm-6{
+    border-right: 1px solid #d5d5d5;
+}
+@media screen and (max-width: 767px) {
+    #tablea{
+        padding-top: 30px;
+    }
+    .centera{
+        padding: 0;
+    }
+    .centera >.container{
+        background: #f3fea0;
+        border-radius: 4px;
+        margin: 10px;
+    }
+    .centera >.container a{
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .centera>#tablea>.box .col-sm-6{
+        border: 0;
+    }
+    .centera>#tablea>.box div p{
+        color: #000;
+        line-height: 30px;
+        text-indent: 2em;
+        font-size: 12px;
+    }
+}

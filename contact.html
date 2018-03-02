@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="上海海纳,信息采集,数据仓储,舆情监控,信息研判,搜索引擎,大数据">
+    <meta name="description" content="上海海纳信达数据技术有限公司（以下简称上海海纳）成立于2017年6月，是一家以大数据和人工智能 技术为基础的高科技公司，由北京诚讯伟业信息技术有限公司、上海网先信息技术有限公司、济南飞熊 信息技术有限公司联合组建而成。上海海纳注册于上海市市北高新园区大数据产业基地，致力于自然语 言处理引擎、大数据技术、人工智能算法和认知计算研发，旨在为客户实现知识发现、数据挖掘和智能 决策">
+    <meta name="author" content="Engineer Wang">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.3&key=63b384883edf64a9b8b74a058236b41c"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/demos/js/liteToolbar.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        #container{
+            height: 200px;
+            width: 100%;
+            margin: 0;
+            font: 12px Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial;
+        }
+        .info-title{
+            color: white;
+            font-size: 14px;
+            background-color: rgba(0,155,255,0.8);
+            line-height: 26px;
+            padding: 0px 0 0 6px;
+            font-weight: lighter;
+            letter-spacing: 1px
+        }
+        .info-content{
+            padding: 4px;
+            color: #666666;
+            line-height: 23px;
+        }
+        .info-content img{
+            float: left;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+<!--头部导航条-->
+<div class="header">
+</div>
+<!--主体部分-->
+<div class="my-main" style="overflow: hidden">
+    <div>
+        <h3 class="animated rubberBand" style="text-align: center;">联系我们</h3>
+    </div>
+    <span></span>
+    <div style="background:#f3f3f3">
+        <div class="container">
+            <div class="row my-contact">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="my-small contacts-img">
+                        <img class="animated pulse" src="img/shanghai.png" alt="">
+                    </div>
+                    <p class="contacts">上海总部</p>
+                    <p class="contacts">上海市杨浦区四平路1777号</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="my-small contacts-img">
+                        <img class="animated pulse" src="img/beijing.png" alt="">
+                    </div>
+                    <p class="contacts">北京公司</p>
+                    <p class="contacts">北京市海淀区北四环西路九号2014S</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="my-small contacts-img">
+                        <img class="animated pulse" src="img/jinan.png" alt="">
+                    </div>
+                    <p class="contacts">济南公司</p>
+                    <p class="contacts">济南市高新区舜华路750号大学科技园北区D座三单元201室</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background:#ededed;padding-top: 80px;">
+        <div class="container">
+            <div class="row address">
+                <div class="col-xs-12 col-sm-7 col-md-8">
+                    <div class="my-small left-map">
+                        <div>
+                            <div id="container" tabindex="0"></div>
+                            <div id='panel'></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md-4">
+                    <div class="my-small">
+                        <ul class="list-unstyled">
+                            <li>地址：上海市杨浦区四平路1777号</li>
+                            <li>电话：021-65553068</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--页尾部分-->
+<div class="footer">
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/load.js"></script>
+<script src="/js/header.js"></script>
+<script type="text/javascript">
+    var map = new AMap.Map('container',{
+        resizeEnable: true,
+        zoom: 10,
+        center: [121.51503,31.292821]
+    });
+    var marker = new AMap.Marker({
+        position: [121.51503,31.292821]
+    });
+    marker.setMap(map);
+    marker.on('click',function(e){
+        infowindow.open(map,e.target.getPosition());
+    });
+    AMap.plugin('AMap.AdvancedInfoWindow',function(){
+        infowindow = new AMap.AdvancedInfoWindow({
+            content: '<div class="info-title" style="background: #f8f8f8;color: #000">上海市杨浦区四平路1777号</div><div class="info-content">',
+            offset: new AMap.Pixel(0, -30)
+        });
+        infowindow.open(map,[121.51503,31.292821]);
+    })
+</script>
+</body>
+</html>

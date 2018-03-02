@@ -1,0 +1,16 @@
+.error{
+    margin: 160px auto;
+    text-align: center;
+}
+.error>p{
+    color: #34d9ec;
+    line-height: 60px;
+}
+.error a{
+    color: #e95d5d;
+    display: inline-block;
+    margin:20px 40px;
+}
+.jcTime{
+    color:red
+}

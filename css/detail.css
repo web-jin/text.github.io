@@ -1,0 +1,74 @@
+
+.my-small{
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+}
+.my-main h3{
+    text-align: center;
+    margin: 120px auto 20px;
+    font-weight: bold;
+    color: #252424;
+}
+.my-main>span{
+    display: block;
+    margin-bottom: 60px;
+    margin-left: 48.8%;
+    width: 36px;
+    height: 4px;
+    background: #f6d203;
+}
+.introduction{
+    text-indent: 2em;
+    color: #252424;
+    font-size: 14px;
+    padding: 20px;
+    height: 200px;
+}
+.introduction p{
+    line-height: 40px;
+}
+.picture img{
+    width: 100%;
+    height: 200px;
+}
+.contacts-img img{
+    margin-left: 20%;
+   margin-right: 20%;
+    width: 50%;
+}
+.contacts{
+    text-align: center;
+    color: #151515;
+    margin: 10px auto 30px;
+    margin-right: 8%;
+}
+.left-map{
+    width: 100%;
+    height: 200px;
+    margin: 40px auto;
+}
+.address ul>li{
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #000000;
+    border-bottom: 1px dashed #5e5e5e;
+    margin-left: 16%;
+}
+@media screen and (max-width: 767px) {
+    .my-main>span{
+        margin-bottom: 40px;
+        margin-left: 42%;
+    }
+    .introduction p{
+        line-height: 30px;
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:960px){
+    .my-main>span{
+        margin-bottom: 40px;
+        margin-left: 46%;
+    }
+}
